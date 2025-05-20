@@ -6,13 +6,13 @@
         <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="stylesheet" href="../webmap_qgis_final-project_group-6/css/leaflet.css">
-        <link rel="stylesheet" href="../webmap_qgis_final-project_group-6/css/L.Control.Layers.Tree.css">
-        <link rel="stylesheet" href="../webmap_qgis_final-project_group-6/css/qgis2web.css">
-        <link rel="stylesheet" href="../webmap_qgis_final-project_group-6/css/fontawesome-all.min.css">
-        <link rel="stylesheet" href="../webmap_qgis_final-project_group-6/css/MarkerCluster.css">
-        <link rel="stylesheet" href="../webmap_qgis_final-project_group-6/css/MarkerCluster.Default.css">
-        <link rel="stylesheet" href="../webmap_qgis_final-project_group-6/css/leaflet-measure.css">
+        <link rel="stylesheet" href="../css/leaflet.css">
+        <link rel="stylesheet" href="../css/L.Control.Layers.Tree.css">
+        <link rel="stylesheet" href="../css/qgis2web.css">
+        <link rel="stylesheet" href="../css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="../css/MarkerCluster.css">
+        <link rel="stylesheet" href="../css/MarkerCluster.Default.css">
+        <link rel="stylesheet" href="../css/leaflet-measure.css">
         <style>
         html, body, #map {
             width: 100%;
@@ -26,24 +26,24 @@
     <body>
         <div id="map">
         </div>
-        <script src="../webmap_qgis_final-project_group-6/js/qgis2web_expressions.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/js/leaflet.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/js/L.Control.Layers.Tree.min.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/js/leaflet-svg-shape-markers.min.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/js/leaflet.rotatedMarker.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/js/leaflet.pattern.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/js/leaflet-hash.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/js/Autolinker.min.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/js/rbush.min.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/js/labelgun.min.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/js/labels.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/js/leaflet-measure.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/js/leaflet.markercluster.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/data/Untersuchungsgebiet_3.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/data/UrbanRuralTypolgy_4.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/data/df_18_avg_5.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/data/df_6_avg_6.js"></script>
-        <script src="../webmap_qgis_final-project_group-6/data/Stationen_7.js"></script>
+        <script src="../js/qgis2web_expressions.js"></script>
+        <script src="../js/leaflet.js"></script>
+        <script src="../js/L.Control.Layers.Tree.min.js"></script>
+        <script src="../js/leaflet-svg-shape-markers.min.js"></script>
+        <script src="../js/leaflet.rotatedMarker.js"></script>
+        <script src="../js/leaflet.pattern.js"></script>
+        <script src="../js/leaflet-hash.js"></script>
+        <script src="../js/Autolinker.min.js"></script>
+        <script src="../js/rbush.min.js"></script>
+        <script src="../js/labelgun.min.js"></script>
+        <script src="../js/labels.js"></script>
+        <script src="../js/leaflet-measure.js"></script>
+        <script src="../js/leaflet.markercluster.js"></script>
+        <script src="../data/Untersuchungsgebiet_3.js"></script>
+        <script src="../data/UrbanRuralTypolgy_4.js"></script>
+        <script src="../data/df_18_avg_5.js"></script>
+        <script src="../data/df_6_avg_6.js"></script>
+        <script src="../data/Stationen_7.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
@@ -723,13 +723,13 @@
         cluster_Stationen_7.addTo(map);
         var overlaysTree = [
         {label: '<b>Messdaten</b>',  selectAllCheckbox: true, children: [
-            {label: '<img src="../webmap_qgis_final-project_group-6/legend/Stationen_7.png" /> Stationen', layer: cluster_Stationen_7},
-            {label: 'df_6_avg<br /><table><tr><td style="text-align: center;"><img src="../webmap_qgis_final-project_group-6/legend/df_6_avg_6_111660.png" /></td><td>11 - 16.6</td></tr><tr><td style="text-align: center;"><img src="../webmap_qgis_final-project_group-6/legend/df_6_avg_6_1662141.png" /></td><td>16.6 - 21.4</td></tr><tr><td style="text-align: center;"><img src="../webmap_qgis_final-project_group-6/legend/df_6_avg_6_2142472.png" /></td><td>21.4 - 24.7</td></tr><tr><td style="text-align: center;"><img src="../webmap_qgis_final-project_group-6/legend/df_6_avg_6_2472733.png" /></td><td>24.7 - 27.3</td></tr><tr><td style="text-align: center;"><img src="../webmap_qgis_final-project_group-6/legend/df_6_avg_6_2733034.png" /></td><td>27.3 - 30.3</td></tr></table>', layer: cluster_df_6_avg_6},
-            {label: 'df_18_avg<br /><table><tr><td style="text-align: center;"><img src="../webmap_qgis_final-project_group-6/legend/df_18_avg_5_9314160.png" /></td><td>9.3 - 14.16</td></tr><tr><td style="text-align: center;"><img src="../webmap_qgis_final-project_group-6/legend/df_18_avg_5_14161771.png" /></td><td>14.16 - 17.7</td></tr><tr><td style="text-align: center;"><img src="../webmap_qgis_final-project_group-6/legend/df_18_avg_5_17719342.png" /></td><td>17.7 - 19.34</td></tr><tr><td style="text-align: center;"><img src="../webmap_qgis_final-project_group-6/legend/df_18_avg_5_19341973.png" /></td><td>19.34 - 19.7</td></tr><tr><td style="text-align: center;"><img src="../webmap_qgis_final-project_group-6/legend/df_18_avg_5_1972084.png" /></td><td>19.7 - 20.8</td></tr></table>', layer: cluster_df_18_avg_5},]},
+            {label: '<img src="../legend/Stationen_7.png" /> Stationen', layer: cluster_Stationen_7},
+            {label: 'df_6_avg<br /><table><tr><td style="text-align: center;"><img src="../legend/df_6_avg_6_111660.png" /></td><td>11 - 16.6</td></tr><tr><td style="text-align: center;"><img src="../legend/df_6_avg_6_1662141.png" /></td><td>16.6 - 21.4</td></tr><tr><td style="text-align: center;"><img src="../legend/df_6_avg_6_2142472.png" /></td><td>21.4 - 24.7</td></tr><tr><td style="text-align: center;"><img src="../legend/df_6_avg_6_2472733.png" /></td><td>24.7 - 27.3</td></tr><tr><td style="text-align: center;"><img src="../legend/df_6_avg_6_2733034.png" /></td><td>27.3 - 30.3</td></tr></table>', layer: cluster_df_6_avg_6},
+            {label: 'df_18_avg<br /><table><tr><td style="text-align: center;"><img src="../legend/df_18_avg_5_9314160.png" /></td><td>9.3 - 14.16</td></tr><tr><td style="text-align: center;"><img src="../legend/df_18_avg_5_14161771.png" /></td><td>14.16 - 17.7</td></tr><tr><td style="text-align: center;"><img src="../legend/df_18_avg_5_17719342.png" /></td><td>17.7 - 19.34</td></tr><tr><td style="text-align: center;"><img src="../legend/df_18_avg_5_19341973.png" /></td><td>19.34 - 19.7</td></tr><tr><td style="text-align: center;"><img src="../legend/df_18_avg_5_1972084.png" /></td><td>19.7 - 20.8</td></tr></table>', layer: cluster_df_18_avg_5},]},
         {label: '<b>Urban-Rural-Typolgy</b>', collapsed: true, selectAllCheckbox: true, children: [
-            {label: 'Urban-Rural-Typolgy<br /><table><tr><td style="text-align: center;"><img src="../webmap_qgis_final-project_group-6/legend/UrbanRuralTypolgy_4_Urbanareas0.png" /></td><td>Urban areas</td></tr><tr><td style="text-align: center;"><img src="../webmap_qgis_final-project_group-6/legend/UrbanRuralTypolgy_4_Regionalcenters1.png" /></td><td>Regional centers</td></tr><tr><td style="text-align: center;"><img src="../webmap_qgis_final-project_group-6/legend/UrbanRuralTypolgy_4_Ruralareasurroundingcenters2.png" /></td><td>Rural area surrounding centers</td></tr><tr><td style="text-align: center;"><img src="../webmap_qgis_final-project_group-6/legend/UrbanRuralTypolgy_4_Ruralarea3.png" /></td><td>Rural area</td></tr></table>', layer: layer_UrbanRuralTypolgy_4},]},
+            {label: 'Urban-Rural-Typolgy<br /><table><tr><td style="text-align: center;"><img src="../legend/UrbanRuralTypolgy_4_Urbanareas0.png" /></td><td>Urban areas</td></tr><tr><td style="text-align: center;"><img src="../legend/UrbanRuralTypolgy_4_Regionalcenters1.png" /></td><td>Regional centers</td></tr><tr><td style="text-align: center;"><img src="../legend/UrbanRuralTypolgy_4_Ruralareasurroundingcenters2.png" /></td><td>Rural area surrounding centers</td></tr><tr><td style="text-align: center;"><img src="../legend/UrbanRuralTypolgy_4_Ruralarea3.png" /></td><td>Rural area</td></tr></table>', layer: layer_UrbanRuralTypolgy_4},]},
         {label: '<b>Borders</b>',  selectAllCheckbox: true, children: [
-            {label: '<img src="../webmap_qgis_final-project_group-6/legend/Untersuchungsgebiet_3.png" /> Untersuchungsgebiet', layer: layer_Untersuchungsgebiet_3},]},
+            {label: '<img src="../legend/Untersuchungsgebiet_3.png" /> Untersuchungsgebiet', layer: layer_Untersuchungsgebiet_3},]},
         {label: '<b>Background</b>', collapsed: true, selectAllCheckbox: true, children: [
             {label: "Esri World Imagery", layer: layer_EsriWorldImagery_2},
             {label: "OSM Standard", layer: layer_OSMStandard_1},
